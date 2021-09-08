@@ -506,6 +506,36 @@ h1 {
 .icon:hover {
   background-color: #ffc7c7;
 }
+
+
+.ceramic-intro{
+  background-color: rgb(241, 222, 233);
+  display: grid; 
+  /*grid-auto-columns: 1fr;*/ 
+  grid-template-columns: 500px 700px; 
+  grid-template-rows: 400px; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". ."; 
+  margin-top: 75px;
+  padding: 10%;
+}
+
+.vase-pic{
+  width: 80%;
+  border-radius: 5%;
+}
+
+.headline-sec{
+  text-align: center;
+}
+.text-sec{
+  text-align: center;
+  font-size: 24px;
+  padding: 10%;
+}
+
+
 /* 
 /* FOOTER */
 
