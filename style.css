@@ -150,33 +150,6 @@ ul li a:hover,
 
 /* LANDING PAGE */
 
-/* .slider{
-  overflow: hidden;
-  width: 500%;
-  height: 500px;
-  position:sticky;
-  background: url(img/vase1.1.jpg);
-  margin: 0;
-  left: 0;
-  animation: slide 20s infinite;
-} */
-
-/* @keyframes slide{
-  25%{
-    background: url(img/vase1.jpg);
-  }
-  50%{
-    background: url(img/vase2.2.jpg);
-  }
-  75%{
-    background: url(img/vase3.3.jpg);
-  }
-  100%{
-    background: url(img/vase5.jpg);
-  }
- 
-} */
-
  #slider{
   overflow: hidden;
 }
@@ -224,22 +197,41 @@ ul li a:hover,
   }
 }
 
+.content-intro{
+  padding: 10%;
+}
+
+.intro{
+  font-family: "CormorantGaramond-Light";
+  text-align: center;
+  padding: 5%;
+}
+
+.introtext{
+  font-family: "CormorantGaramond-Light";
+  text-align: center;
+}
+
+.pic-intro{
+  background-color: grey;
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 2fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 5px 5px; 
+  grid-template-areas: 
+    ". ."; 
+}
+
+.heart-pic{
+  width: 80%;
+}
+
+.text-section{
+  text-align: center;
+}
 
 
-
-
-
-/* .bgImg {
-  background-image: url(./images/bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 87vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
 /* CERAMICS PAGE */
 .name {
   font-size: 25px;
