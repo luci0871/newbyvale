@@ -168,6 +168,7 @@ ul li a:hover,
   #slider #fig img{
   width: 20%; 
   float: left;
+  
 }  
 
  #slider #fig {
@@ -177,6 +178,7 @@ ul li a:hover,
   left: 0;
   margin-top: -15%; 
   animation: 20s slide infinite; 
+  
 } 
 
 @keyframes slide {
@@ -210,39 +212,62 @@ ul li a:hover,
 }
 
 .content-intro{
-  padding: 10%;
+  padding: 15%;
+
 }
 
 .intro{
   font-family: "CormorantGaramond-Light";
   text-align: center;
   padding: 5%;
+  margin: 10px 5px;
 }
 
 .introtext{
   font-family: "CormorantGaramond-Light";
   text-align: center;
+  font-weight: 100;
 }
 
 .pic-intro{
   background-color: rgb(241, 222, 233);
   display: grid; 
   grid-auto-columns: 1fr; 
-  grid-template-columns: 2fr 1fr; 
+  grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr; 
   gap: 5px 5px; 
   grid-template-areas: 
     ". ."; 
+    padding: 15%;
 }
 
 .heart-pic{
   width: 80%;
+  border-radius: 5%;
 }
 
 .text-section{
   text-align: center;
+  font-size: 24px;
+  padding: 10%;
+  margin: 0%;
+  font-weight: 100;
 }
 
+.headline-section{
+  text-align: center;
+ 
+}
+
+/* #mudtomagic{
+  background-image: linear-gradient(blue, pink, red, yellow, green);
+} */
+
+@media only screen and (min-device-width: 200px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1){
+  .pic-intro{
+    
+  }
+}
 
 
 /* CERAMICS PAGE */
@@ -321,7 +346,7 @@ main {
 .product-img {
   height: 28vw;
   border: 1px solid #aaaaaa;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 .hide {
