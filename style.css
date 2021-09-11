@@ -625,17 +625,20 @@ h1 {
 #shop{
   font-weight: bold;
   font-size: 20px;
+  color:rgb(59, 59, 59);
 }
 
 
 #about-bottom{
   font-weight: bold;
   font-size: 20px;
+  color:rgb(59, 59, 59);
 }
 
 #more{
   font-weight: bold;
   font-size: 20px;
+  color:rgb(59, 59, 59);
 }
 
 .bottom-icons{
@@ -671,22 +674,7 @@ h1 {
     }
   }
 
-  
-  
-    /*   .footer {
-      height: auto;
-    }
-  
-    
-    .footer-section address {
-      height: auto;
-      position: relative;
-    }
-  
-    .footer .footer-bottom {
-      visibility: hidden;
-    } */
-  
+
 
 /* to top btn */
 #myBtn {
