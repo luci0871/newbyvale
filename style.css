@@ -571,52 +571,75 @@ h1 {
 .footer {
   background: #aaaaaa;
   color: #f6f6f6;
-  height: 50%;
+  height: 600px;
   width: 100%;
   position: relative;
-   padding-top: 8vh; 
+  padding-top: 10vh; 
 }
 
 .footer .footer-content {
   /* border: 1px solid blue; */
-  height: 350px;
+  height: 500px;
   display: grid;
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-margin-left: 5%;
+  grid-auto-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr ; 
+  gap: 0px 0px;
 }
 
 .footer-logo{
   width: 80%;
   text-align-last: center;
+  margin-top: -30px;
 }
 
 .footer-logo img {
   height: 150px;
 }
 
-.footer .footer-bottom {
-  background: grey;
-  color: #ffc7c7;
-  height: 50px;
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  padding-top: 20px;
+
+.line{
+  width: 900px;
+  height: 1px;
+  border: 0 none;
+  margin-right: 10px;
+  margin-left: -15px;
+  margin-top: 250px;
+  margin-bottom: 90px;
+  background-color: rgb(241, 222, 233);
+}
+
+.text-copy{
+  display: block;
+  white-space:pre-line;
+  margin-top: 280px;
+  color:rgb(241, 222, 233) ;
+}
+
+.other-side{
+  display: inline;
+  word-spacing: 30px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+#shop{
+  font-weight: bold;
+  font-size: 20px;
 }
 
 
-h4 {
-  font-size: 20px; 
-  text-transform: uppercase;
-  color: #ffc7c7;
+#about-bottom{
+  font-weight: bold;
+  font-size: 20px;
 }
 
-h3 {
-  padding: 10px 0;
+#more{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.bottom-icons{
+  margin-top: 400px;
 }
 
 
