@@ -37,12 +37,10 @@ nav a {
   font-size: 20px;
 }
 nav a.active {
-  text-decoration: underline;
   color: var(--secondary-color);
   transition: 0.5s ease;
 }
 nav a:hover {
-  text-decoration: underline;
   color: var(--secondary-color);
   transition: 0.5s ease;
 }
@@ -75,7 +73,13 @@ details {
   position: fixed;
   width: -webkit-fill-available;
   z-index: 5;
+  
 }
+
+/* .largeNav a:link {
+  text-decoration: none;
+} */
+
 details > summary {
   list-style-type: none;
 }
@@ -217,14 +221,15 @@ ul li a:hover,
 }
 
 .intro{
-  font-family: "CormorantGaramond-Light";
+  font-family: 'Parisienne', cursive;
   text-align: center;
   padding: 5%;
   margin: 10px 5px;
+  font-size: 60px
 }
 
 .introtext{
-  font-family: "CormorantGaramond-Light";
+  font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
   font-weight: 100;
 }
@@ -244,9 +249,11 @@ ul li a:hover,
 .heart-pic{
   width: 80%;
   border-radius: 5%;
+  margin: 25px;
 }
 
 .text-section{
+  font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
   font-size: 24px;
   padding: 10%;
@@ -256,6 +263,7 @@ ul li a:hover,
 
 .headline-section{
   text-align: center;
+  font-family: 'Parisienne', cursive;
  
 }
 
@@ -265,13 +273,15 @@ ul li a:hover,
 
 @media only screen and (min-device-width: 200px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1){
   .pic-intro{
-    
+    display: flex;
+    flex-direction: column;
   }
 }
 
 
 /* CERAMICS PAGE */
 .name {
+  font-family: 'Parisienne', cursive;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
@@ -282,6 +292,7 @@ ul li a:hover,
   text-align: center;
 }
 #btn {
+  font-family: 'Open Sans Condensed', sans-serif;
   padding: 0.3vw 0.5vw;
   display: inline-block;
   padding: 15px 40px;
@@ -546,6 +557,8 @@ h1 {
   padding: 10%;
 }
 
+
+
 .vase-pic{
   width: 80%;
   border-radius: 5%;
@@ -553,8 +566,11 @@ h1 {
 
 .headline-sec{
   text-align: center;
+  font-family: 'Parisienne', cursive;
 }
+
 .text-sec{
+  font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
   font-size: 24px;
   padding: 10%;
@@ -569,7 +585,7 @@ h1 {
 }
 
 .footer {
-  background: #aaaaaa;
+  background-color: #aaaaaa;
   color: #f6f6f6;
   height: 600px;
   width: 100%;
@@ -598,20 +614,15 @@ h1 {
 
 
 .line{
-  width: 900px;
   height: 1px;
   border: 0 none;
-  margin-right: 10px;
-  margin-left: -15px;
-  margin-top: 250px;
-  margin-bottom: 90px;
+  /* margin: 50px; */
+  margin: 0 60px 0 60px;
   background-color: rgb(241, 222, 233);
 }
 
 .text-copy{
-  display: block;
-  white-space:pre-line;
-  margin-top: 280px;
+  align-self: center;
   color:rgb(241, 222, 233) ;
 }
 
@@ -648,32 +659,107 @@ h1 {
 }
 
 
-  @media only screen and (min-device-width: 200px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1){
-    .footer-content {
-      display: grid; 
-      grid-auto-columns: 1fr; 
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-      grid-template-rows: 1fr 1fr 1fr; 
-      gap: 0px 0px; 
-      grid-template-areas: 
-        ". . . . ."
-        ". . . . ."
-        ". . . . ."; 
-    }
-  }
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+footer {
+  background-color: #aaaaaa;
+  padding: 50px;
+}
 
-  @media (max-width: 640px){
-    .footer-content{
-      display: grid; 
-      grid-auto-columns: 1fr; 
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-      grid-template-rows: 1fr 1fr 1fr; 
-      gap: 0px 0px; 
-      grid-template-areas: 
-        ". . . . ."
-        ". . . . ."
-        ". . . . ."; 
+.logo-area{
+  display: grid;
+  grid-auto-flow: column; 
+  /* justify-content: space-around; */
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.logo-area img {
+  width: 400px;
+}
+
+.logo-area a, .some-area a {
+  align-self: center;
+}
+
+.footer-links, .footer-icons{
+  word-spacing: 50px;
+  align-self: center;
+}
+
+.footer-links, a{
+  font-family: 'Parisienne', cursive;
+}
+
+.some-area{
+  display: grid;
+  grid-auto-flow: column;
+  /* justify-content: space-around; */
+  justify-content: space-between;
+  padding: 60px;
+}
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+
+  @media only screen and (min-device-width: 200px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1){
+    .ceramic-intro{
+      display: flow-root;
     }
+
+    .vase-pic{
+      margin: 25px;
+    }
+
+
+    footer {
+      padding: 0;
+    }
+    .logo-area {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-area{
+      padding: 60px 0 20px 0; 
+    }
+
+    .some-area{
+      padding: 20px 0 60px 0; 
+    }
+
+
+    .logo-area img {
+      width: auto;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-links a {
+      margin-bottom: 20px;
+    }
+
+    .footer-icons {
+      margin-bottom: 25px;
+    }
+
+    .logo-area img {
+      margin-bottom: 20px;
+    }
+
+    .footer-icons .fab {
+      font-size: 6vw;
+    }
+    .some-area {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
   }
 
 
@@ -743,16 +829,18 @@ summary img {
   }
   .logombl {
     display: inline-block;
-    margin-right: 75%;
+    /* margin-right: 75%; */
   }
-  .logombl img {
+  /* .logombl img {
     width: 100%;
     height: 50px;
-  }
+  } */
 
   .largeNav {
     display: none;
   }
+
+
   details {
     display: inline;
     /* padding: 25px; */
@@ -804,6 +892,7 @@ summary img {
     height: auto;
   }
   .amount {
+    font-family: 'Open Sans Condensed', sans-serif;
     margin-top: 1vw;
   }
 
@@ -868,10 +957,12 @@ summary img {
 #valentinIntro p {
   font-size: 20px;
   margin-top: 30px;
+  font-family: 'Open Sans Condensed', sans-serif;
+
 }
-/* #valentinIntro h1 {
-  text-align: center;
-} */
+ #valentinIntro h1 {
+  font-family: 'Parisienne', cursive;
+} 
 
 /* contact page css */
 #col-lg-6,
@@ -912,12 +1003,14 @@ summary img {
 }
 
 .contact-text1 {
+  font-family: 'Parisienne', cursive;
   margin-top: 75px;
   padding: 5%;
   text-align: center;
   grid-area: contact;
 }
 .contact-text2 {
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 24px;
   font-weight: lighter;
   padding: 7%;
@@ -942,6 +1035,7 @@ summary img {
 }
 
 .second-box {
+  font-family: 'Open Sans Condensed', sans-serif;
   display: flex;
   font-size: 20px;
   padding: 10px;
@@ -957,7 +1051,39 @@ summary img {
   grid-area: address;
 }
 .contact-sec2{
+  font-family: 'Parisienne', cursive;
   text-align: center;
-  font-weight: lighter;
+  color: black;
 }
 
+
+.contact-address{
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  padding: 15px;
+}
+
+@media only screen and (min-device-width: 200px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1){
+  .contact-grid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-section-address{
+    padding: 0px 0 41px 50px;
+  }
+
+  .contact-text1{
+    padding: 40px;
+    margin-bottom: -90px;
+  }
+
+  .contact-sec{
+    margin: auto;
+  }
+
+  .contact-sec1{
+    margin: 40px 10px;
+    padding: 30px;
+  }
+}
