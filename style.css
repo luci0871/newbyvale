@@ -375,13 +375,14 @@ main {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.modal-desc{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
 .modal-name{
   font-family: 'Parisienne', cursive;
 }
 
-.modal-desc{
-  font-family: 'Open Sans Condensed', sans-serif;
-}
 
 .cont {
   display: flex;
