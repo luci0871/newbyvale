@@ -76,10 +76,6 @@ details {
   
 }
 
-/* .largeNav a:link {
-  text-decoration: none;
-} */
-
 details > summary {
   list-style-type: none;
 }
@@ -127,8 +123,6 @@ header {
   justify-content: space-between;
   margin: 1vw 10vw;
   align-items: center;
-  /*  margin-left: 10vw;
-  margin-right: 10vw; */
 }
 li {
   display: inline-block;
@@ -267,9 +261,6 @@ ul li a:hover,
  
 }
 
-/* #mudtomagic{
-  background-image: linear-gradient(blue, pink, red, yellow, green);
-} */
 
 @media only screen and (min-device-width: 200px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1){
   .pic-intro{
@@ -605,7 +596,6 @@ h1 {
 }
 
 .footer .footer-content {
-  /* border: 1px solid blue; */
   height: 500px;
   display: grid;
   grid-auto-columns: 1fr 1fr; 
@@ -670,8 +660,6 @@ h1 {
   
 }
 
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 footer {
   background-color: #aaaaaa;
   padding: 50px;
@@ -680,7 +668,6 @@ footer {
 .logo-area{
   display: grid;
   grid-auto-flow: column; 
-  /* justify-content: space-around; */
   justify-content: space-between;
   padding: 60px;
 }
@@ -705,15 +692,9 @@ footer {
 .some-area{
   display: grid;
   grid-auto-flow: column;
-  /* justify-content: space-around; */
   justify-content: space-between;
   padding: 60px;
 }
-
-
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
 
 
   @media only screen and (min-device-width: 200px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1){
@@ -844,12 +825,7 @@ summary img {
   }
   .logombl {
     display: inline-block;
-    /* margin-right: 75%; */
   }
-  /* .logombl img {
-    width: 100%;
-    height: 50px;
-  } */
 
   .largeNav {
     display: none;
@@ -858,7 +834,6 @@ summary img {
 
   details {
     display: inline;
-    /* padding: 25px; */
     text-align: cetner;
     width: 90%;
     font-size: 24px;
