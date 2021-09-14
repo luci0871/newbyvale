@@ -290,6 +290,7 @@ ul li a:hover,
   font-size: 15px;
   font-weight: bold;
   text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 #btn {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -373,6 +374,15 @@ main {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+.modal-name{
+  font-family: 'Parisienne', cursive;
+}
+
+.modal-desc{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
 .cont {
   display: flex;
   flex-direction: column;
@@ -750,6 +760,8 @@ footer {
       color: black !important;
     }
 
+
+
     .logo-area img {
       margin-bottom: 20px;
     }
@@ -894,7 +906,6 @@ summary img {
     height: auto;
   }
   .amount {
-    font-family: 'Open Sans Condensed', sans-serif;
     margin-top: 1vw;
   }
 
