@@ -624,6 +624,7 @@ h1 {
 .text-copy{
   align-self: center;
   color:rgb(241, 222, 233) ;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .other-side{
@@ -746,6 +747,7 @@ footer {
 
     .footer-icons {
       margin-bottom: 25px;
+      color: black;
     }
 
     .logo-area img {
@@ -1041,6 +1043,11 @@ summary img {
   padding: 10px;
   justify-content: center;
 }
+
+i.fas.fa-envelope{
+  place-self: center;
+}
+
 
 .contact-sec1 {
   padding: 5%;
