@@ -747,7 +747,7 @@ footer {
 
     .footer-icons {
       margin-bottom: 25px;
-      color: black;
+      color: black !important;
     }
 
     .logo-area img {
